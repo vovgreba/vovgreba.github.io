@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+
+/* setting */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #141414;
+}
+img {
+  width: 100%;
+}
+:root {
+  --body: #E5E5E5;
+  --orange: #FFAA01;
+  --light-grey: #F6F8F9;
+}
+html {
+  position: relative;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  background-color: var(--body);
+  font-size: 17px;
+  color: #141414;
+}
+
+html::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  background-image: url(../images/pyramid-right.svg);
+  background-size: cover;
+  width: 245px;
+  height: 371px;
+  z-index: -5;
+}
+html::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/pyramid-left.svg);
+  background-size: cover;
+  width: 271px;
+  height: 396px;
+  z-index: -5;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1140px;
+  margin: 115px auto 80px;
+  padding: 0 15px;
+}
+.text--attraction {
+  color: var(--orange);
+}
+.text--bold {
+  font-weight: 700;
+}
+
+/* aside */
+aside {
+  max-width: 370px;
+}
+.main {
+  background-color: #fff;
+  border-radius: 30px 30px 0 0;
+  padding: 0 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main img {
+  margin: -40px auto 35px;
+  max-width: 230px;
+  
+}
+.main p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  white-space: nowrap;
+}
+.specialty {
+  background-color: var(--light-grey);
+  border-radius: 75px;
+  padding: 10px 18px;
+  margin-bottom: 30px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.messengers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 25px;
+
+}
+.messengers_link {
+  display: flex;
+  padding: 10px;
+  background-color: #f0f8ff;
+  border-radius: 50px;
+  transition: all .5s linear;
+}
+.messengers_link:hover {
+  background-color: #8bc4f7;
+  
+}
+
+.messengers_link--another-color:hover {
+  background-color: #fa1919;
+}
+.messengers img {
+  max-width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.about-contact-skils {
+  background-color: var(--light-grey);
+  border-radius: 0 0 30px 30px;
+  padding: 45px 0 35px 49px;
+}
+
+.about-contact-skils h3 {
+  margin-bottom: 30px;
+}
+.items {
+  padding-left: 20px;
+}
+.items li {
+  margin-bottom: 10px;
+}
+.items li:last-child {
+  margin-bottom: 0;
+}
+.contacts a {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+}
+.contacts a:nth-of-type(1)::before  {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 20px;
+  background-image: url(../images/telephone.svg);
+  background-size: cover;
+  top: 0;
+  left: 0;
+}
+.contacts a:nth-of-type(2)::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 17px;
+  background-image: url(../images/email.svg);
+  background-size: cover;
+  top: 2px;
+  left: 0;
+}
+
+.contacts a:nth-of-type(1) {
+  display: block;
+  margin-bottom: 20px;
+
+}
+.contacts, .tech-skills, .soft-skills {
+  margin-bottom: 50px;
+}
+
+aside button {
+  display: block;
+  padding: 15px 80px 15px 95px;
+  position: relative;
+  border: 0;
+  background: #FFAA01;
+  box-shadow: 0px 4px 15px rgba(255, 170, 1, 0.29);
+  border-radius: 21px;
+  color: #F5F7F8;
+  cursor: pointer;
+  transition: all .5s ease-in;
+}
+aside button:hover {
+  background: #a77614;
+  color: #94d3ee;
+}
+aside button::before {
+  position: absolute;
+  content: '';
+  background-image: url(../images/eye.svg);
+  background-size: cover;
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+  top: 17px;
+  left: 62px;
+}
+
+
+/* main */
+
+main {
+  max-width: 770px;
+  margin-right: 15px;
+}
+main h2 {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.profile {
+  position: relative;
+  background-color: #fff;
+  border-radius: 30px 30px 0 0 ;
+  padding: 30px 40px 30px 40px;
+  line-height: 26px;
+}
+.profile::before {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 4px;
+  background: var(--orange);
+  border-radius: 47px;
+  /* bottom: -10px; */
+  top: 70px;
+  left: 40px;
+}
+.expirience {
+  background-color: var(--light-grey);
+  border-radius: 0 0 30px 30px;
+  padding: 45px 50px 40px 40px;
+}
+.expirience h3 {
+  margin-bottom: 20px;
+}
+.expirience p {
+  margin-bottom: 40px;
+}
+.expirience p:last-child {
+  margin-bottom: 50px;
+}
+.education span {
+  color: #959595;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  aside {
+    display: flex;
+    max-width: none;
+    gap: 20px;
+  }
+  .about-contact-skils {
+    padding: 20px;
+    border-radius: 30px;
+  }
+  .main {
+    padding: 0 30px;
+    border-radius: 30px;
+  }
+  aside button {
+    padding: 15px 60px;
+  }
+  aside button::before {
+    left: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+
+  aside {
+    margin: 0 15px;
+  }
+ /* .items {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ } */
+}
