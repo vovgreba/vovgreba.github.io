@@ -127,11 +127,7 @@ aside {
 .messengers_link--another-color:hover {
   background-color: #fa1919;
 }
-.messengers img {
-  max-width: 18px;
-  height: 18px;
-  margin: 0;
-}
+
 
 .about-contact-skils {
   background-color: var(--light-grey);
@@ -188,7 +184,7 @@ aside {
 
 aside button {
   display: block;
-  padding: 15px 80px 15px 95px;
+  padding: 15px 70px 15px 66px;
   position: relative;
   border: 0;
   background: #FFAA01;
@@ -198,20 +194,13 @@ aside button {
   cursor: pointer;
   transition: all .5s ease-in;
 }
+.fa-solid {
+  margin-right: 12px;
+  vertical-align: middle;
+}
 aside button:hover {
   background: #a77614;
   color: #94d3ee;
-}
-aside button::before {
-  position: absolute;
-  content: '';
-  background-image: url(../images/eye.svg);
-  background-size: cover;
-  width: 20px;
-  height: 14px;
-  cursor: pointer;
-  top: 17px;
-  left: 62px;
 }
 
 
@@ -289,13 +278,43 @@ main h2 {
     left: 30px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 626px) {
 
   aside {
-    margin: 0 15px;
+    margin: 0 10px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
- /* .items {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
- } */
+  .specialty {
+    padding: 11px 24px;
+    margin: 0 auto 30px;
+    max-width: 257px;
+    font-size: 14px;
+}
+
+  .main {
+    padding: 0 46px 50px;
+  }
+  .main p {
+    text-align: center;
+    font-size: 18px;
+  }
+  .about-contact-skils {
+    padding: 50px;
+}
+  .expirience {
+    padding: 30px;
+  }
+
+}
+@media screen and (max-width: 410px) {
+
+  .main {
+    padding: 0 15px 50px;
+  }
+  .about-contact-skils {
+    padding: 20px;
+}
+
+
 }
