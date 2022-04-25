@@ -128,7 +128,6 @@ aside {
   background-color: #fa1919;
 }
 
-
 .about-contact-skils {
   background-color: var(--light-grey);
   border-radius: 0 0 30px 30px;
@@ -203,7 +202,6 @@ aside button:hover {
   color: #94d3ee;
 }
 
-
 /* main */
 
 main {
@@ -231,7 +229,6 @@ main h2 {
   height: 4px;
   background: var(--orange);
   border-radius: 47px;
-  /* bottom: -10px; */
   top: 70px;
   left: 40px;
 }
@@ -314,7 +311,6 @@ main h2 {
   }
   .about-contact-skils {
     padding: 20px;
-}
-
+  }
 
 }
