@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PROCODE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
   <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -12,12 +13,14 @@
  <main class="hero">
    <div class="container">
      <header class="header">
-      <div class="logo-text">PRO<span>CODE</span></div>
+      <a href="#" class="logo-text">PRO<span>CODE</span></a>
       <nav class="navigation">
         <a href="#" class="nav_link">Услуги</a>
         <a href="#" class="nav_link">О нас</a>
         <a href="#" class="nav_link">Технологии</a>
-        <a href="#" class="nav_link">Контакты</a></nav>
+        <a href="#" class="nav_link">Контакты</a>
+      </nav>
+      <i class="fa-solid fa-bars"></i>
      </header>
 
    </div>
@@ -26,10 +29,10 @@
      <div class="content">
        <div class="content_text">
          <h1 class="content_title title">Создаём и поддерживаем 
-          онлайн-продукты</h1>
+          онлайн&nbsp;-&nbsp;продукты</h1>
          <p class="content_desc description">Разрабатываем и помогаем развивать онлайн-сервисы,<br> 
           сайты и мобильные приложения.</p>
-          <button class="content_btn button ">Свяжитесь с нами</button>
+          <button  class="content_btn button ">Свяжитесь с нами</button>
        </div>
        <div class="content_logo">
           <img src="images/logo.svg" alt="logo">
@@ -73,7 +76,7 @@
          <div class="services_item-description">
            <img src="./images/development.svg" alt="img">
            <p>Разработка сайтов <br>
-            и интернет-магазинов </p>
+            и интернет-магазинов</p>
          </div>
          <div class="services_excerpt">
           <p>Узнать больше</p>
@@ -145,7 +148,8 @@
       <h2 class="form_title title">Заполните форму, и мы свяжемся с вами</h2>
       <input class="form_input" type="text" placeholder="Ваше имя">
       <input class="form_input"type="tel" placeholder="Номер телефона">
-      <label for="radio"><input class="form_radio" type="radio" id="radio"> Я согласен предоставить свои персональные данные.</label>
+      <input class="form_checkbox" type="checkbox" id="checkbox">
+      <label for="checkbox"> Я согласен предоставить свои персональные данные.</label>
       <button class="button_form button">Отправить</button>
     </form>
   </div>
@@ -208,7 +212,7 @@
   <hr class=" footer_line line">
   <div class="container">
     <div class="footer_copyright">
-      <span class="copyright">(с)PROCODE</span>
+      <a href="#" class="copyright">(с)PROCODE</a>
       <a href="#">Наш телеграм</a>
 
     </div>
