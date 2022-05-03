@@ -207,9 +207,8 @@ body {
 }
 
 .hero_img {
-
   margin-right: 65px;
- 
+  margin-bottom: -4px;
 }
 
 .menu {
@@ -303,7 +302,6 @@ section {
   padding: 25px 42px 20px 147px;
   color: var(--dark-grey);
   letter-spacing: 0.01rem;
-  /* counter-reset: one 1; */
 }
 section::before {
   counter-increment: section;   
@@ -365,7 +363,7 @@ section::before {
   height: 121px;
   width: 15px;
   background-color: var(--diagram);
-  border-radius: 4px;
+  border-radius: 3px;
   padding: 3px;
   transform: rotate(180deg);
 }
@@ -401,10 +399,7 @@ footer hr {
   height: 47px;
   background-color: var(--dark-blue);
 }
-footer .school {
-}
-footer .footer {
-}
+
 footer .title {
   font-size: 24px;
   line-height: 29px;
@@ -416,4 +411,186 @@ footer .footer_item {
 }
 footer .footer_item li {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1010px) {
+  .hero_title {
+    font-size: 24px;
+  }
+  .hero_subtitle {
+    font-size: 22px;
+  }
+  .footer_inner {
+    column-gap: 30px;
+  }
+  .hero_img {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer_inner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 40px;
+    
+  }
+  .footer_item {
+    max-width: 180px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .main::before {
+    width: 891px;
+    height: 487px;
+  }
+  .main::after {
+    width: 811px;
+    height: 325px;
+}
+  .hero_img {
+    margin-top: 44px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
+  .hero_button {
+    margin-bottom: 40px;
+  }
+  .hero_text {
+    max-width: 330px;
+  }
+  .hero_img img {
+    width: 85%;
+  }
+  .navigation {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .burger_menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .hero {
+    padding-bottom: 70px;
+  }
+  .hero_title {
+    padding-top: 30px;
+  }
+  .hero_text {
+    max-width: 550px;
+  }
+  .hero_img {
+    display: none;
+  }
+}
+@media screen and (max-width: 470px) { 
+  .main::after {
+    width: 511px;
+    height: 204px;
+  }
+  .main::before {
+    width: 473px;
+    height: 475px;
+    left: -178px;
+    clip-path: polygon(81% 36%, 0 77%, 138% 240%);
+  }
+  .hero_loading {
+    max-width: 339px;
+  }
+  .menu {
+    display: none;
+  }
+  .caption_name {
+    margin-bottom: 20px;
+  }
+  .caption_btn {
+    width: 100%;
+  }
+  .caption_inner {
+    display: block;
+  }
+  .diagram {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    order: 1;
+    margin-right: 21px;
+    margin-left: 70px;
+  }
+  .diagram_grafic {
+    margin-top: 0;
+    margin-right: 20px;
+    order: 1;
+    transform: rotate(0deg);
+  }
+  .diagram_number {
+    order: 2;
+  } 
+  .diagram_loading {
+    width: 60%;
+    height: 9px;
+  }
+  section {
+    padding-top: 34px;
+    flex-direction: column;
+  }
+  section::before {
+    font-size: 40px;
+    top: 34px;
+    left: 15px;
+  }
+  .diagram_grafic {
+    width: 157px;
+    height: 15px;
+  }
+  .content {
+    padding: 26px 0 15px 15px;
+    order: 2;
+  }
+  .content_title {
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.2rem;
+  }
+  
+  .footer_inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: flex-start;
+  }
+  footer .school {
+    display: none;
+  }
+  footer .materials {
+    display: none;
+  }
+  footer .information {
+    display: none;
+  }
+  .contact {
+    padding: 48px 0 46px 33px;
+  }
+  footer .footer_item li{
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 18px;
+  }
+  footer .footer_item li::before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/tell.svg);
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
