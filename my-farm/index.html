@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>account</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <span class="text-balance">Сумарный баланс</span>
+    <div class="wrapper-content">
+      <header class="header">
+          <div class="header_btn">
+            <button type="button" class="header_my-farm header_link" href="#">моя ферма</button>
+            <div class="burger">
+              <div class="line"></div>
+            </div>
+          </div>
+          <nav class="menu">
+            <a class="header_account header_link" href="#">аккаунт</a>
+            <a class="header_settings header_link" href="#">настройки</a>
+            <a class="header_help header_link" href="#">помощь</a>
+          </nav>
+
+        <div class="header_profile">
+          <a href="#"><img src="images/profil.png" alt="profile"></a>
+          <a href="#">NickOcean</a>
+        </div>
+      </header>
+      <main class="main">
+        <section class="my-farm">
+          <div class="my-farm_sm">
+            <div class="my-farm_text">моя ферма</div>
+            <button type="button" class="button-control">
+              добавить валюту
+            </button>
+          </div>
+
+          <h1 class="my-farm_text my-farm_text--sm">моя ферма</h1>
+          <div class="my-farm_balance">
+            <span class="my-farm_amount my-farm_amount--ltc">ltc <span class="my-farm--text-big"> $160,43</span></span>
+            <span class="my-farm_amount my-farm_amount--btc">btc <span class="my-farm--text-big"> $8 545,00</span></span>
+            <span class="my-farm_amount my-farm_amount--eth">eth <span class="my-farm--text-big"> $533,00</span></span>
+
+          </div>
+          <button type="button" class="button-control button-control--none">
+            добавить валюту
+          </button>
+        </section>
+        <section class="digital-statistics">
+          <div class="digital-statistics_balance">
+            <div class="digital-statistics_sum-balance">
+              <div class="digital-statistics_content digital-statistics--border-color">
+                <div class="digital-statistics_text">
+                  <span class="iner-content iner-content--name">Сумарный баланс</span>
+                  <span class="iner-content  iner-content--circle">1.245008 <span>BTC</span></span>
+                  <span class="iner-content iner-content--number">15 678 USD</span>
+                </div>
+                <div class="digital-statistics_grafic">
+                  <div class="circle"></div>
+                </div>
+              </div>
+              <div class="digital-statistics_box">
+                <button type="button" class="digital-statistics_button button--binance">
+                  <img src="images/binance-btn.png" alt="img">
+                </button>
+                <button type="button" class="digital-statistics_button button--success">
+                  <img src="images/buy-sell.png" alt="img">
+                </button>
+              </div>
+            </div>
+            <div class="digital-statistics_diagram">
+              <div class="digital-statistics_content">
+                <div class="digital-statistics_text">
+                  <span class="iner-content iner-content--regular">Litecoin <span class="iner-content--name">LTC</span></span>
+                  <span class="iner-content iner-content--speed">24 <span>MH/S</span></span>
+                  <span class="iner-content iner-content--number">0.15000000 LTC</span>
+                </div>
+                <div class="digital-statistics_grafic">
+                  <div class="digital-statistics_img"><img src="images/litecoin.png" alt="litecoin"></div>
+                  <div class="digital-statistics_graph"><img src="images/vector.svg" alt="grafic"></div>
+                </div>
+              </div>
+              <div class="digital-statistics_check-input">
+                <input  id="check" type="checkbox" checked>
+                <label  for="check" class="digital-statistics_text-input">Автопокупка хешрейта <span>(3 Mh/s)</span></label> 
+                
+              </div>
+            </div>
+            <div class="digital-statistics_diagram">
+              <div class="digital-statistics_content">
+                <div class="digital-statistics_text">
+                  <span class="iner-content iner-content--regular">Bitcoin <span class="iner-content--name">BTC</span></span>
+                  <span class="iner-content iner-content--speed">24 <span>MH/S</span></span>
+                  <span class="iner-content iner-content--number">0.15000000 LTC</span>
+                </div>
+                <div class="digital-statistics_grafic">
+                  <div class="digital-statistics_img digital-statistics_img-bitcoin"><img src="images/bitcoin-orang.png" alt="litecoin"></div>
+                  <div class="digital-statistics_graph"><img src="images/vector.svg" alt="grafic"></div>
+                </div>
+              </div>
+              <div class="digital-statistics_check-input">
+                <input  id="bitcoin" type="checkbox">
+                <label  for="bitcoin" class="digital-statistics_text-input">Автопокупка хешрейта <span>(3 Mh/s)</span></label> 
+                
+              </div>
+            </div>
+            <div class="digital-statistics_diagram">
+              <div class="digital-statistics_content">
+                <div class="digital-statistics_text">
+                  <span class="iner-content iner-content--regular">Ethereum <span class="iner-content--name">ETH</span></span>
+                  <span class="iner-content iner-content--speed">24 <span>MH/S</span></span>
+                  <span class="iner-content iner-content--number">0.15000000 LTC</span>
+                </div>
+                <div class="digital-statistics_grafic">
+                  <div class="digital-statistics_img digital-statistics_img-bitcoin"><img src="images/ethereum-color.png" alt="litecoin"></div>
+                  <div class="digital-statistics_graph"><img src="images/vector.svg" alt="grafic"></div>
+                </div>
+              </div>
+              <div class="digital-statistics_check-input">
+                <input  id="ethereum" type="checkbox" checked>
+                <label  for="ethereum" class="digital-statistics_text-input">Автопокупка хешрейта <span>(3 Mh/s)</span></label> 
+                
+              </div>
+            </div>
+            <div class="digital-statistics_diagram">
+              <div class="digital-statistics_content">
+                <div class="digital-statistics_text">
+                  <span class="iner-content iner-content--regular">Dash <span class="iner-content--name">DASH</span></span>
+                  <span class="iner-content iner-content--speed iner-content--speed-blue">0 <span>MH/S</span></span>
+                  <span class="iner-content iner-content--number">0.00000000 LTC</span>
+                </div>
+                <div class="digital-statistics_grafic">
+                  <div class="digital-statistics_img digital-statistics_img-bitcoin"><img src="images/dash.png" alt="litecoin"></div>
+                  <div class="digital-statistics_graph"><img src="images/vector.svg" alt="grafic"></div>
+                </div>
+              </div>
+              <div class="digital-statistics_check-input">
+                <input  id="dash" type="checkbox" checked>
+                <label  for="dash" class="digital-statistics_text-input">Автопокупка хешрейта <span>(3 Mh/s)</span></label> 
+                
+              </div>
+            </div>
+            <div class="digital-statistics_diagram">
+              <div class="digital-statistics_content">
+                <div class="digital-statistics_text">
+                  <span class="iner-content iner-content--regular">Monero <span class="iner-content--name">XMR</span></span>
+                  <span class="iner-content iner-content--speed iner-content--speed-blue">24 <span>MH/S</span></span>
+                  <span class="iner-content iner-content--number">0.15000000 LTC</span>
+                </div>
+                <div class="digital-statistics_grafic">
+                  <div class="digital-statistics_img digital-statistics_img-bitcoin"><img src="images/monero.png" alt="litecoin"></div>
+                  <div class="digital-statistics_graph"><img src="images/vector.svg" alt="grafic"></div>
+                </div>
+              </div>
+              <div class="digital-statistics_check-input">
+                <input  id="monero" type="checkbox">
+                <label  for="monero" class="digital-statistics_text-input">Автопокупка хешрейта <span>(3 Mh/s)</span></label> 
+                
+              </div>
+            </div>
+
+          </div>
+          <div class="digital-statistics_accrual">
+            <div class="digital-statistics_accrual-balance">
+              Общий баланс <br><span>1.245 </span>BTC
+            </div>
+            <div class="digital-statistics_accrual-additional-sum">
+              Начисления <br><span>0.114 </span>BTC
+            </div>
+            <div class="digital-statistics_accrual-service">
+              Обслуживание <br><span>0.087 </span>BTC
+            </div>
+
+          </div>
+        </section>
+
+        <section class="income-chart">
+          <div class="income_chart_diagram">
+            <div class="income-chart_name-balance">
+              <span class="text-names_balance">Начисление и баланс</span>
+            </div>
+            <div class="income-chart_diagram">
+              <div class="income-chart_wrapper">
+                <div class="income-chart_value">
+                  <div class="value-usd">USD</div>
+                  <div class="value-btc">BTC</div>
+                </div>
+                <div class="income-chart_weeks">
+                  <div class="weeks">2 недели</div>
+                  <div class="week">Неделя</div>
+                </div>
+              </div>
+              <img src="images/diagram.svg" alt="diagram">
+            </div>
+          </div>
+          <div class="income-chart_statistics">
+            <div class="income-chart_name">
+              <div class="text-names">Прогноз доходности</div>
+              <div class="circle circle--yield"></div>
+            </div>
+            <div class="income-chart_content">
+              <span>День</span>
+              <div class="income-chart_numb">0.000000 BTC = 0.00 USD</div>
+              <span>Неделя</span>
+              <div class="income-chart_numb">0.000000 BTC = 1000.00 USD</div>
+              <span>Месяц</span>
+              <div class="income-chart_numb">0.000000 BTC = 50,000.00 USD</div>
+              <span>Год</span>
+              <div class="income-chart_numb">0.000000 BTC = 0.00 USD</div>
+            </div>
+          </div>
+        </section>
+        <section class="statistics">
+          <div class="statistics_account"> 
+            <div class="text-names">Статистика аккаунта</div>
+            <nav class="statistics_navigation">
+              <div class="statistics_navigation-item">all</div>
+              <div class="statistics_navigation-item">rewards</div>
+              <div class="statistics_navigation-item">Maintenance</div>
+              <div class="statistics_navigation-item">balance</div>
+              <div class="statistics_navigation-item">withdrawals</div>
+              <div class="statistics_navigation-item">contracts</div>
+            </nav>
+            <div class="statistics_table">
+              <div class="statistics_table-mini">
+                <div class="statistics_items">
+                  <div class="statistics_title">Тарифы</div>
+                  <div class="statistics_subtitle ">
+                    <span class="statistics--name-value">BTC Optimal</span><span class="statistics--active">Активен</span></div>
+                  <div class="statistics_subtitle"><span class="statistics--name-value">BTC Optimal</span><span class="statistics--end">Заканчивается</span></div>
+                  <div class="statistics_subtitle"><span class="statistics--name-value">BTC Optimal</span><span class="statistics--end">Заканчивается</span></div>
+                </div>
+                <div class="statistics_items ">
+                  <div class="statistics_title">Дата</div>
+                  <div class="statistics_subtitle statistics_items--line">28.02.2018</div>
+                  <div class="statistics_subtitle statistics_items--line">28.02.2018</div>
+                  <div class="statistics_subtitle">28.02.2018</div>
+                </div>
+                <div class="statistics_items">
+                  <div class="statistics_title">Время</div>
+                  <div class="statistics_subtitle statistics_items--line">03:13:26</div>
+                  <div class="statistics_subtitle statistics_items--line">03:13:26</div>
+                  <div class="statistics_subtitle">03:13:26</div>
+                </div>
+                <div class="statistics_items">
+                  <div class="statistics_title">Сума</div>
+                  <div class="statistics_item ">0.250134 BTC <span class="statistics--value">3 145 USD</span></div>
+                  <div class="statistics_item ">0.250134 BTC <span class="statistics--value">3 145 USD</span></div>
+                  <div class="statistics_item ">0.250134 BTC <span class="statistics--value">3 145 USD</span></div>
+                </div>
+              </div>
+ 
+              <div class="statistics_table-large">
+                <div class="statistics_menu">
+                  <div class="statistics_title">Тарифы</div>
+                  <div class="statistics_title">Дата</div>
+                  <div class="statistics_title">Время</div>
+                  <div class="statistics_title">Сума</div>
+                </div>
+              
+                  <div class="statistics_row statistics_items--line">
+                    <div class="statistics_subtitle ">
+                      <span class="statistics--name-value">BTC Optimal</span><span class="statistics--active">Активен</span>
+                    </div>
+                    <div class="item">28.02.2018  </div>
+                    <div class="item">03:13:26</div>
+                    <div class="statistics_item ">0.250134 BTC <span class="statistics--value">3 145 USD</span></div>
+  
+                  </div>
+                  <div class="statistics_row statistics_items--line">
+                    <div class="statistics_subtitle"><span class="statistics--name-value">BTC Optimal</span><span class="statistics--end">Заканчивается</span></div>
+                    <div class="item">28.02.2018  </div>
+                    <div class="item">03:13:26</div>
+                    <div class="statistics_item ">0.250134 BTC <span class="statistics--value">3 145 USD</span></div>
+  
+                  </div>
+                  <div class="statistics_row ">
+                    <div class="statistics_subtitle"><span class="statistics--name-value">BTC Optimal</span><span class="statistics--end">Заканчивается</span></div>
+                    <div class="item">28.02.2018  </div>
+                    <div class="item">03:13:26</div>
+                    <div class="statistics_item">0.250134 BTC <span class="statistics--value">3 145 USD</span></div>
+  
+                  </div>
+              </div>
+
+
+              
+
+            </div>
+          </div>
+          <div class="statistics_contract">
+            <div class="text-names">Мои контракты</div>
+            <div class="statistics_box-items">
+              <div class="item item--size">CustomBTC</div>
+              <div class="item item--bold">2 TH/s</div>
+              <div class="item item--active">активен</div>
+              <div class="item item--date">10.15.2018-10.15.2019</div>
+            </div>
+            <div class="statistics_box-items">
+              <div class="item item--size">PreorderLTC</div>
+              <div class="item item--bold">6 TH/s</div>
+              <div class="item item--finished">заканчивается</div>
+              <div class="item item--date">10.15.2017-10.15.2019</div>
+            </div>
+            <div class="statistics_box-items">
+              <div class="item item--size">PreorderDASH</div>
+              <div class="item item--bold">6 TH/s</div>
+              <div class="item item--finished">заканчивается</div>
+              <div class="item item--date">10.15.2017-10.15.2019</div>
+            </div>
+            <button class="button-show">Показать все</button>
+          </div>
+
+        </section>
+        <footer class="footer">
+          SibHash.com 2018
+        </footer>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>
