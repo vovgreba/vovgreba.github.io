@@ -26,11 +26,14 @@ a {
   padding: 0 15px;
 }
 .header {
+  position: fixed;
+  z-index: 20;
+  max-width: 100%;
+  width: 100%;
   background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 100%;
   height: 76px;
   border-bottom: 1px solid #323232;
   font-weight: 600;
@@ -108,12 +111,50 @@ a {
   height: 10px;
 
 }
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  opacity: 0.9;
+  z-index: 10;
+  gap: 40px;
+}
+
+.mobile-menu a {
+  font-size: 22px;
+  padding: 10px 20px;
+}
+.mobile-menu a:hover {
+  background: linear-gradient(273.43deg, #3869aa 0%, #0347ad 100%);
+  border-radius: 6px;
+  color: rgb(204, 204, 204);
+}
+
+.mobile-menu--show {
+  display: flex;
+	animation: slide-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(76px);
+  }
+}
+
 /* hero */
 
 .hero {
   position: relative;
   background-color: #000;
-  padding: 107px 0 212px 0;
+  padding: 183px 0 212px 0;
   color: #fff;
 }
 .hero::before {
@@ -303,10 +344,16 @@ a {
 .table_item span {
   margin-right: 10px;
   color: red;
+  cursor: pointer;
 }
 .table_item span:last-child {
   margin-left: 10px;
   color: red;
+}
+span.table_item-count {
+  color: #000;
+  cursor: unset;
+  margin-right: 0;
 }
 .table_content {
   display: flex;
@@ -473,6 +520,8 @@ a {
   gap: 21px;
 }
 .project_item {
+  position: relative;
+  z-index: 5;
   background-image: url(../images/bg-icon.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -481,6 +530,30 @@ a {
   align-items: center;
   padding: 42px 0 39px;
   flex-basis: 529px;
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+}
+.project_item::before  {
+  position: absolute;
+  content: '';
+  background-image: url(../images/bg-icon--filter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; 
+  z-index: -5;
+  transition: opacity 0.3s linear;
+}
+.project_item:hover::before {
+  opacity: 0.6; /* Зробимо псевдоелемент з видимим затемненням при наведенні */
+}
+
+.project_item:hover {
+  opacity: 1; /* Зробимо основний елемент `.project_item` видимим при наведенні */
 }
 .project_item img{
   width: 81px;
@@ -499,6 +572,11 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.project_item:last-of-type::before {
+  background-image: url(../images/bg-babystep-icon--filter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .project_item:last-of-type img {
   width: 309px;
   height: 58px;
@@ -510,6 +588,21 @@ a {
   height: 10px;
   margin-top: 20px;
   margin-bottom: 0;
+}
+.project_item-title {
+  color: #FFF;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0%;
+  letter-spacing: 0.39px;
+}
+.project_item-desc {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0%; 
 }
 
 /* footer */
